@@ -33,7 +33,7 @@ export default class Home extends React.Component
                     {/* <li>
                         <HashLink smooth to={"/#summaryProfessionalSamples"} onClick={this.openProfessionalSamples}>Links</HashLink> to some of my professional work.
                     </li> */}
-                    <li>My code for this site can be found on <a href="https://github.com/samriz/sameer-portfolio-site-react-typescript" target="_blank" title="Site's GitHub Repo" rel="noopener noreferrer">GitHub <ExternalUrlArrow/></a>.</li>
+                    <li>My code for this site can be found on <a href="https://github.com/samriz/sameer-portfolio-site-react-typescript-vite" target="_blank" title="Site's GitHub Repo" rel="noopener noreferrer">GitHub <ExternalUrlArrow/></a>.</li>
                 </ul>
             </div>
         );
