@@ -2,6 +2,7 @@ import React from 'react';
 //import jQueryConfirm from "./modal";
 import {FormInput} from "./forminput";
 import {EmailRegex} from "../constants/regex";
+import { confirm } from './confirm';
 
 interface ContactFormState 
 {
@@ -110,7 +111,6 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                     body: formData
                 });
 
-                //let confirmObj = new jQueryConfirm();
                 let confirmMessage: string = "";
                 if(response.ok) 
                 {
@@ -118,15 +118,11 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                     emailElement.value = "";
                     messageElement.value = "";
 
-                    //confirmObj.setModalContent("Message sent!");
                     confirmMessage = "Message sent!";
                 }
-                //else confirmObj.setModalContent("Message could not be sent.");
                 else confirmMessage = "Message could not be sent.";
                 
-                //confirmObj.createModal();
-                //confirmObj.getModal().open();
-                window.confirm(confirmMessage);
+                await confirm({confirmation: confirmMessage});
             }
         }
         /* console.log("State name: " + this.state.name);
