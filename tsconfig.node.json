@@ -21,8 +21,7 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "noImplicitAny": false,
-    "allowObjectTypes": true
+    "noImplicitAny": false
   },
   "include": ["vite.config.ts"]
 }
