@@ -2,6 +2,7 @@ import React from 'react';
 import {FormInput} from "./forminput";
 import {EmailRegex} from "../constants/regex";
 import { confirm } from './confirm';
+import "../styles/textbox.css";
 
 interface ContactFormState 
 {
@@ -96,6 +97,7 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
         let contactPhone = document.getElementById("contactPhone") as HTMLInputElement;
         if(contactPhone.value.length === 0)
         {
+            let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn") as HTMLButtonElement;
             if(this.isValid(this.state.name, 100) && this.isValidEmail(this.state.email) && this.isValid(this.state.message, 1000))
             {
                 let form = document.getElementById("contactForm") as HTMLFormElement;
@@ -124,9 +126,12 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                 
                 if(await confirm({confirmation: confirmMessage})) 
                 {
-                    let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn") as HTMLButtonElement;
                     contactFormSubmitBtn.disabled = false;
                 }
+            }
+            else
+            {
+                contactFormSubmitBtn.disabled = false;
             }
         }
         /* console.log("State name: " + this.state.name);
