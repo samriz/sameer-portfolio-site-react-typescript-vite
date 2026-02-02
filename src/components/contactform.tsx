@@ -1,5 +1,4 @@
 import React from 'react';
-//import jQueryConfirm from "./modal";
 import {FormInput} from "./forminput";
 import {EmailRegex} from "../constants/regex";
 import { confirm } from './confirm';
