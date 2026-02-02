@@ -8,7 +8,7 @@ export default class MobileMenu extends React.Component
         return(
             <nav className={"menu"}>
                 <div id={"divMobileMenuItems"}>
-                    <button id="hamburgerButton" className={"fas fa-bars"} onClick={this.showOrHideList}>
+                    <button id="hamburgerButton" className={"fas fa-bars"} onClick={this.showOrHideList} aria-label="Menu">
                         {/* <i id="hamburgerITag" className={"fas fa-bars"}></i> */}
                     </button>
                     <ul id={"hamburgerList"}>
