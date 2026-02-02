@@ -46,7 +46,7 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                 </tr>
                 <tr>
                     <td>
-                        <button type="submit" className="btn btn-outline-secondary">Send</button>
+                        <button id="contactFormSubmitBtn" type="submit" className="btn btn-outline-secondary">Send</button>
                     </td>
                 </tr>
             </tbody>                             
@@ -72,7 +72,8 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
     formSubmit = async (e: React.FormEvent) => 
     {
         e.preventDefault();
-
+        let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn") as HTMLButtonElement;
+        contactFormSubmitBtn.disabled = true;
         let nameElement = document.getElementById("contactName") as HTMLInputElement;
         let emailElement = document.getElementById("contactEmail") as HTMLInputElement;
         let messageElement = document.getElementById("contactMessage") as HTMLInputElement;
@@ -121,7 +122,11 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                 }
                 else confirmMessage = "Message could not be sent.";
                 
-                await confirm({confirmation: confirmMessage});
+                if(await confirm({confirmation: confirmMessage})) 
+                {
+                    let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn") as HTMLButtonElement;
+                    contactFormSubmitBtn.disabled = false;
+                }
             }
         }
         /* console.log("State name: " + this.state.name);
