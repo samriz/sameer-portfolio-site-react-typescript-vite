@@ -1,6 +1,6 @@
 import React from 'react';
 import PageTemplate from "./pagetemplate.tsx";
-import LinkedInPicture from "./misc/LinkedInPicture1.png";
+import LinkedInPicture from "./images/LinkedInPicture1.png";
 import Resume from "./misc/SameerRizviResume.pdf";
 import { DownloadButton } from './components/buttons.tsx';
 import { ExternalUrlArrow } from './components/icons.tsx';
