@@ -131,6 +131,7 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
             }
             else
             {
+                //if validation fails, reenable submit button so that user can correct inputs
                 contactFormSubmitBtn.disabled = false;
             }
         }
