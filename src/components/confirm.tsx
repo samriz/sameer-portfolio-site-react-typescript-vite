@@ -7,7 +7,7 @@ export interface Props {
   okLabel?: string;
   cancelLabel?: string;
   title?: string;
-  confirmation?: string;
+  confirmationMessage?: string;
 };
 
 const Confirmation: ConfirmDialog<Props, boolean> = (props) => (
@@ -17,7 +17,7 @@ const Confirmation: ConfirmDialog<Props, boolean> = (props) => (
         <Modal.Title>{props.title}</Modal.Title>
       </Modal.Header> */}
       <Modal.Body>
-        {props.confirmation}
+        {props.confirmationMessage}
       </Modal.Body>
       {/* <Button onClick={() => props.proceed(true)}>{props.okLabel || 'OK'}</Button> */}
       <Modal.Footer style={{borderTop: "none"}}>

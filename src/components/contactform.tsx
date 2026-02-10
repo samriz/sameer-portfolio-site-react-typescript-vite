@@ -63,6 +63,14 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
 
         const contactEmail = document.getElementById("contactEmail") as HTMLInputElement;
         contactEmail.required = true;
+        /* contactEmail.addEventListener("input", () => {
+            let span = document.getElementById("spanInvalidEmail") as HTMLSpanElement;
+            span.hidden = this.isValidEmail(contactEmail.value);
+        }); */
+        /* contactEmail.addEventListener("focusout", () => {
+            let span = document.getElementById("spanInvalidEmail") as HTMLSpanElement;
+            span.hidden = this.isValidEmail(contactEmail.value);
+        }); */
 
         const contactMessage = document.getElementById("contactMessage") as HTMLInputElement;
         contactMessage.required = true;
@@ -124,7 +132,7 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                 }
                 else confirmMessage = "Message could not be sent.";
                 
-                if(await confirm({confirmation: confirmMessage})) 
+                if(await confirm({confirmationMessage: confirmMessage})) 
                 {
                     contactFormSubmitBtn.disabled = false;
                 }
