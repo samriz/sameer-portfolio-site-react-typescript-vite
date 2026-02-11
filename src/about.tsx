@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTemplate from "./pagetemplate.tsx";
-import LinkedInPicture from "./images/LinkedInPicture1.png";
+//import LinkedInPicture from "./images/LinkedInPicture1.png";
 import Resume from "./misc/SameerRizviResume.pdf";
 import { DownloadButton } from './components/buttons.tsx';
-import { ExternalUrlArrow } from './components/icons.tsx';
-import { HashLink } from 'react-router-hash-link';
+//import { ExternalUrlArrow } from './components/icons.tsx';
+//import { HashLink } from 'react-router-hash-link';
 
 export default class About extends React.Component
 {
@@ -14,7 +14,7 @@ export default class About extends React.Component
         intro_content={
             <>
             <h1>About</h1>
-                <>
+                {/* <>
                     <figure>
                         <a href="https://www.linkedin.com/in/sameer-r-bb788375/" target="_blank" rel="noreferrer"><img src={LinkedInPicture} id="profilepic" className="center" title="Sameer Rizvi" alt="Sameer Rizvi" loading="lazy"/></a>
                         <figcaption>
@@ -23,7 +23,7 @@ export default class About extends React.Component
                             <a href={"https://www.linkedin.com/in/sameer-r-bb788375/"} target={"_blank"} rel="noreferrer" title="My LinkedIn Page">LinkedIn <ExternalUrlArrow/></a>
                         </figcaption>
                     </figure>
-                </>
+                </> */}
             </>
         }
         main_content={

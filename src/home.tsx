@@ -4,6 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import PageTemplate from "./pagetemplate";
 import Resume from "./misc/SameerRizviResume.pdf";
 import { ExternalUrlArrow } from './components/icons';
+import LinkedInPicture from "./images/LinkedInPicture1.png";
 
 export default class Home extends React.Component
 {
@@ -11,7 +12,19 @@ export default class Home extends React.Component
     {
         return (
             <PageTemplate intro_id={"home"} main_id={"homeMain"}
-                intro_content={<h1>Sameer Rizvi</h1>}
+                intro_content={
+                <>
+                    <h1>Sameer Rizvi</h1>
+                    <figure>
+                        <a href="https://www.linkedin.com/in/sameer-r-bb788375/" target="_blank" rel="noreferrer"><img src={LinkedInPicture} id="profilepic" className="center" title="Sameer Rizvi" alt="Sameer Rizvi" loading="lazy"/></a>
+                        <figcaption>
+                            <HashLink smooth to="/#contact" className="textlink" title="The Contact Page">Contact Me</HashLink>
+                            <br/>
+                            <a href={"https://www.linkedin.com/in/sameer-r-bb788375/"} target={"_blank"} rel="noreferrer" title="My LinkedIn Page">LinkedIn <ExternalUrlArrow/></a>
+                        </figcaption>
+                    </figure>
+                </>
+            }
                 main_content={this.homeContent()}
             />
         );
