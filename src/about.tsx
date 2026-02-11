@@ -28,6 +28,7 @@ export default class About extends React.Component
         }
         main_content={
             <>
+            <p>Click each header to expand it's section:</p>
                 <div className={"leftPad"} id={"divAboutDetails"}>
                     <details className="aboutDetails">
                         <summary>Education</summary>
