@@ -13,7 +13,7 @@ export default class About extends React.Component
         return (<PageTemplate intro_id={"about"} main_id={"aboutMain"}
         intro_content={
             <>
-            <h1>About</h1>
+            <h2>About</h2>
                 {/* <>
                     <figure>
                         <a href="https://www.linkedin.com/in/sameer-r-bb788375/" target="_blank" rel="noreferrer"><img src={LinkedInPicture} id="profilepic" className="center" title="Sameer Rizvi" alt="Sameer Rizvi" loading="lazy"/></a>
