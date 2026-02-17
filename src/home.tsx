@@ -18,7 +18,7 @@ export default class Home extends React.Component
                     <figure>
                         <a href="https://www.linkedin.com/in/sameer-r-bb788375/" target="_blank" rel="noreferrer"><img src={LinkedInPicture} id="profilepic" className="center" title="Sameer Rizvi" alt="Sameer Rizvi" loading="lazy"/></a>
                         <figcaption>
-                            <HashLink smooth to="/#contact" className="textlink" title="The Contact Page">Contact Me</HashLink>
+                            <HashLink smooth to="/contact" className="textlink" title="The Contact Page">Contact Me</HashLink>
                             <br/>
                             <a href={"https://www.linkedin.com/in/sameer-r-bb788375/"} target={"_blank"} rel="noreferrer" title="My LinkedIn Page">LinkedIn <ExternalUrlArrow/></a>
                         </figcaption>
@@ -39,10 +39,10 @@ export default class Home extends React.Component
                 <ul>
                     <li>My <Link to={Resume} title="Link to my Resume" target={"_blank"} rel={"author"}>resume <ExternalUrlArrow/></Link>.</li>
                     <li>An 
-                        <HashLink smooth to={"/#about"} title="The About Page" rel="author"> about</HashLink> section, detailing my academic and professional history.
+                        <HashLink smooth to={"/about"} title="The About Page" rel="author"> about</HashLink> section, detailing my academic and professional history.
                     </li>
                     <li>My <a href={"https://github.com/samriz"} target={"_blank"} title="My GitHub Page" rel={"noopener noreferrer"}>GitHub page <ExternalUrlArrow/></a>.</li>
-                    <li>A way to <HashLink smooth to={"/#contactMain"} title="The Contact Page" rel={"author"}>contact</HashLink> me.</li>
+                    <li>A way to <HashLink smooth to={"/contact"} title="The Contact Page" rel={"author"}>contact</HashLink> me.</li>
                     {/* <li>
                         <HashLink smooth to={"/#summaryProfessionalSamples"} onClick={this.openProfessionalSamples}>Links</HashLink> to some of my professional work.
                     </li> */}

@@ -6,17 +6,17 @@ export default function Menu()
       <nav className="menu">
         <div id="divMenuItems">
           <DesktopMenuItem
-            href="/#home"
+            href="/"
             text="sameer"
           />
           <span style={{color: "white"}}>|</span>
           <DesktopMenuItem
-            href="/#about"
+            href="/about"
             text="about"
           />
           <span style={{color: "white"}}>|</span>
           <DesktopMenuItem
-            href="/#contact"
+            href="/contact"
             text="contact"
           />
         </div>
