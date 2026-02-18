@@ -171,7 +171,11 @@ nav{height: 35px;}
 
 .hidden{display: none;}
 
-.allButFooter{min-height: calc(100vh - 95px);}
+.allButFooter
+{
+  min-height: calc(100vh - 95px);
+  padding-bottom: 150px;
+}
 
 /* .allButFooter:not(.intro)
 {
