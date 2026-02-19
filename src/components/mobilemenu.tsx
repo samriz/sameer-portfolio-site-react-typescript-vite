@@ -14,19 +14,19 @@ export default class MobileMenu extends React.Component
                     <ul id={"hamburgerList"}>
                         <li className={"hamburgerListItem"}>
                             <MobileMenuItem
-                                href={"/#home"}
+                                href={"/"}
                                 text={"sameer"}
                             />
                         </li>
                         <li className={"hamburgerListItem"}>
                             <MobileMenuItem
-                                href={"/#about"}
+                                href={"/about"}
                                 text={"about"}
                             />
                         </li>
                         <li className={"hamburgerListItem"}>
                             <MobileMenuItem
-                                href={"/#contact"}
+                                href={"/contact"}
                                 text={"contact"}
                             />
                         </li>
