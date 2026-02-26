@@ -53,7 +53,7 @@ export default class MobileMenu extends React.Component
     showOrHideList = () => 
     {
         let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
-        if(hamburgerList.hidden === true) hamburgerList.hidden = false;
+        if(hamburgerList.hidden) hamburgerList.hidden = false;
         else hamburgerList.hidden = true;
     }
 }
