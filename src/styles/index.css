@@ -186,6 +186,7 @@ nav{height: 35px;}
 .bi-linkedin{color: #0a66c2;}
 
 .bi-github{color: purple;}
+/* .bi-github{color: #171515;} */
 
 .hamburgerListItem
 {
@@ -198,3 +199,5 @@ nav{height: 35px;}
 .roundedCorners{border-radius: 2em;}
 
 .aboutTableRow{vertical-align: top; /* or middle, bottom, baseline */}
+
+.pageLink{color: #0072ed;}
