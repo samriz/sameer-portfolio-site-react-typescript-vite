@@ -48,6 +48,7 @@ export default class Home extends React.Component
                     </li> */}
                     <li>My code for this site can be found on <a href="https://github.com/samriz/sameer-portfolio-site-react-typescript-vite" className="pageLink" target="_blank" title="Site's GitHub Repo" rel="noopener noreferrer">GitHub <ExternalUrlArrow/></a>.</li>
                 </ul>
+                <p>Feel free to explore the site and reach out if you have any questions or opportunities!</p>
             </div>
         );
     }
