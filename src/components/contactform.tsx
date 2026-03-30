@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormInput} from "./forminput";
+import FormInput from "./forminput";
 import {EmailRegex} from "../constants/regex";
 import { confirm } from './confirm';
 import "../styles/textbox.css";
@@ -27,12 +27,12 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
             <tbody>
                 <tr>
                     <td>
-                        <FormInput type="text" id="contactName" name="name" placeholder="Name" className="form-control" minLength={2} maxLength={100}/>
+                        <FormInput type="text" id="contactName" name="name" placeholder="Name" className="form-control" minLength={2} maxLength={100} required={true} hidden={false}/>
                     </td>                                       
                 </tr>
                 <tr>
                     <td>
-                        <FormInput type="email" id="contactEmail" name="email" placeholder="Email" className="form-control" minLength={2} maxLength={50}/>
+                        <FormInput type="email" id="contactEmail" name="email" placeholder="Email" className="form-control" minLength={2} maxLength={50} required={true} hidden={false}/>
                     </td> 
                 </tr>
                 <tr id={"trPhone"}>
@@ -42,7 +42,7 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
                 </tr>
                 <tr>
                     <td>
-                        <FormInput type="textarea" id="contactMessage" name="message" placeholder="Message" className="form-control" rows={5} cols={50} minLength={2} maxLength={1000}/>
+                        <FormInput type="textarea" id="contactMessage" name="message" placeholder="Message" className="form-control" rows={5} cols={50} minLength={2} maxLength={1000} required={true} hidden={false}/>
                     </td>
                 </tr>
                 <tr>
@@ -58,12 +58,8 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
 
     componentDidMount()
     {
-        const contactName = document.getElementById("contactName") as HTMLInputElement;
-        contactName.required = true;
-
-        const contactEmail = document.getElementById("contactEmail") as HTMLInputElement;
-        contactEmail.required = true;
-        /* contactEmail.addEventListener("input", () => {
+        /* const contactEmail = document.getElementById("contactEmail") as HTMLInputElement;
+         contactEmail.addEventListener("input", () => {
             let span = document.getElementById("spanInvalidEmail") as HTMLSpanElement;
             span.hidden = this.isValidEmail(contactEmail.value);
         }); */
@@ -71,9 +67,6 @@ export default class ContactForm extends React.Component<{}, ContactFormState>
             let span = document.getElementById("spanInvalidEmail") as HTMLSpanElement;
             span.hidden = this.isValidEmail(contactEmail.value);
         }); */
-
-        const contactMessage = document.getElementById("contactMessage") as HTMLInputElement;
-        contactMessage.required = true;
         
         document.getElementById("trPhone")!.hidden = true;
     }
