@@ -1,43 +1,17 @@
-import React from "react";
+import { useEffect } from "react";
 import { MobileMenuItem } from "./menuitem";
 
-export default class MobileMenu extends React.Component
+const showOrHideList = () => 
 {
-    render()
-    {
-        return(
-            <nav className={"menu"}>
-                <div id={"divMobileMenuItems"}>
-                    <button id="hamburgerButton" className={"fas fa-bars"} onClick={this.showOrHideList} aria-label="Menu">
-                        {/* <i id="hamburgerITag" className={"fas fa-bars"}></i> */}
-                    </button>
-                    <ul id={"hamburgerList"}>
-                        <li className={"hamburgerListItem"}>
-                            <MobileMenuItem
-                                href={"/"}
-                                text={"sameer"}
-                            />
-                        </li>
-                        <li className={"hamburgerListItem"}>
-                            <MobileMenuItem
-                                href={"/about"}
-                                text={"about"}
-                            />
-                        </li>
-                        <li className={"hamburgerListItem"}>
-                            <MobileMenuItem
-                                href={"/contact"}
-                                text={"contact"}
-                            />
-                        </li>
-                    </ul>
-                    </div>
-            </nav>
-        );
-    }
+    let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
+    
+    if(hamburgerList.hidden) hamburgerList.hidden = false;
+    else hamburgerList.hidden = true;
+}
 
-    componentDidMount()
-    {
+export default function MobileMenu()
+{
+    useEffect(() => {
         let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
         hamburgerList.hidden = true;
 
@@ -48,12 +22,35 @@ export default class MobileMenu extends React.Component
             //if the clicked element is not the hamburger button then hide the hamburger list
             if(clickedElement !== hamburgerButton) hamburgerList.hidden = true;
         });
-    }
+    }, []); //The empty array means that this effect will only run once when the component is mounted. Equivalent to componentDidMount() in class components.
 
-    showOrHideList = () => 
-    {
-        let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
-        if(hamburgerList.hidden) hamburgerList.hidden = false;
-        else hamburgerList.hidden = true;
-    }
+    return (
+        <nav className={"menu"}>
+            <div id={"divMobileMenuItems"}>
+                <button id="hamburgerButton" className={"fas fa-bars"} onClick={showOrHideList} aria-label="Menu">
+                    {/* <i id="hamburgerITag" className={"fas fa-bars"}></i> */}
+                </button>
+                <ul id={"hamburgerList"}>
+                    <li className={"hamburgerListItem"}>
+                        <MobileMenuItem
+                            href={"/"}
+                            text={"sameer"}
+                        />
+                    </li>
+                    <li className={"hamburgerListItem"}>
+                        <MobileMenuItem
+                            href={"/about"}
+                            text={"about"}
+                        />
+                    </li>
+                    <li className={"hamburgerListItem"}>
+                        <MobileMenuItem
+                            href={"/contact"}
+                            text={"contact"}
+                        />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
 }
