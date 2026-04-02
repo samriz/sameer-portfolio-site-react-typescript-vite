@@ -33,7 +33,7 @@ export default function About()
                                 <td>
                                     Loyola University Chicago &mdash; Chicago, IL 
                                     <br/>              
-                                    <strong>B.S. in Computer Science</strong>, Cum Laude
+                                    <strong>B.S. in Computer Science</strong>
                                     <br/>
                                 </td> 
                             </tr>
@@ -52,10 +52,10 @@ export default function About()
                                     <strong>Software Engineer</strong>
                                     <br/>
                                     <ul>
-                                        <li>Researched, diagnosed, troubleshooted, and identified solutions to resolve software application issues associated with Consilio’s web-based eDiscovery platform, “Sightline”.</li>
-                                        <li>Collaborated with team members to maintain and improve the components of Sightline.</li>
-                                        <li>Identified areas of improvement related to the efficiency of Sightline and saw it through all phases of the project lifecycle: requirements gathering, solution design, application development, and testing.</li>
-                                        <li>Leveraged agile methodologies like Scrum and full stack development in HTML, CSS, JavaScript, React, TypeScript, ASP.NET MVC, C#, and SQL to bring about solutions for law firms and their clients.</li>
+                                        <li>Managed multiple concurrent technical investigations and requests as Level 3 Support, prioritizing issues based on disruption to company processes.</li>
+                                        <li>Supported and developed new features for Sightline &ndash; Consilio's proprietary web-based eDiscovery platform &ndash; including a more practical searching mechanism, which increased Sightline-use productivity by 10%.</li>
+                                        <li>Participated in the full software lifecycle including requirements analysis, solution design, development, and testing.</li>
+                                        <li>Tech Stack: .NET, C#, JavaScript, NodeJS, React, HTML, CSS, SQL.</li>
                                     </ul>                        
                                 </td>
                             </tr>
@@ -66,13 +66,10 @@ export default function About()
                                     <strong>Web Developer</strong>
                                     <br/>     
                                     <ul>
-                                        <li>New development and maintenance of ASP.NET web applications including applications built using MVC and Webforms frameworks; languages that include C#, VB.NET, JavaScript, HTML, VBScript, and razor; and MySQL and Microsoft SQL Server databases for data storage.</li>
-                                        <li>Utilized Git and Subversion for Version Control.</li>
-                                        <li>Development of custom solutions related to proprietary web-based CMS called “Spinternet”.</li>
-                                        <li>Coordinated with Project Managers to deliver products and solutions to clients.</li>
-                                        <li>Collaborated with other developers/team members to improve efficiency and timely delivery of solutions.</li>
-                                        <li>Wrote clean, consistent code matching established guidelines and patterns.</li>
-                                        <li>Leveraged work, from website maintenance tasks to new development on existing sites, for several different clients and deliver quality solutions within deadlines.</li>
+                                        <li>Worked in a fast-paced marketing setting, where tasks revolved around developing new features and improving existing ones in several clients&apos; websites including implementing new forms and modals, hiding/unhiding specific components based on a set of criteria, etc.</li>
+                                        <li>Cross-collaborated with Project Managers and clients to discuss software feature updates through self-lead project update meetings.</li>
+                                        <li>Oversaw the implementation and maintenance of reCAPTCHA v3 to all forms in clients&apos; websites, which averaged 3 forms per site in over 50 sites.</li>
+                                        <li>Tech Stack: .NET, VB, C#, JavaScript, HTML, CSS, SQL.</li>                                        
                                     </ul>
                                 </td>
                             </tr>
@@ -83,10 +80,10 @@ export default function About()
                                     <strong>Junior Software Developer</strong>
                                     <br/>     
                                     <ul>
-                                        <li>Assisted in new development and maintenance of ASP.NET MVC e-commerce website (C# as back-end).</li>
-                                        <li>New development included implementing HTML forms with client-side and server-side validation, implementing asynchronous operations in controller, retrieving information (using ADO.NET Entity Data Models and LINQ) from SQL Server database, etc.</li>
-                                        <li>Maintenance included product support by responding to user requests and investigating user concerns.</li>
-                                        <li>Other tasks included code refactorings and adding comments in code files.</li>
+                                        <li>Assisted in the development and maintenance of American Hotel Register Company&apos;s e-commerce platform and collaborated with developers to produce and maintain optimal performance.</li>
+                                        <li>Researched, investigated, and resolved user issues through support requests and system troubleshooting pertaining to API connection issues.</li>
+                                        <li>Assisted and taught other web developers to use Postman to help diagnose systemic issues related to API requests.</li>
+                                        <li>Tech Stack: .NET, C#, JavaScript, HTML, CSS, SQL.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -98,9 +95,9 @@ export default function About()
                                     <strong>Information Systems Specialist</strong>
                                     <br/>      
                                     <ul>
-                                        <li>Constructed a separate <q>Configurator</q> &mdash; an application that allows Sales and Engineering to configure any product offered by the company, generate quotes and sales orders - for each product offered by the company.</li>
-                                        <li>Tested inside of Microsoft Dynamics which is the platform used to launch the <q>Configurator</q>, while providing Microsoft Dynamics training to end users.</li>
-                                        <li>Interacted, introduced, and reviewed requirements with Sales, Engineering and Production departments to ensure proper solution is delivered in a timely manner.</li>
+                                        <li>Implemented a rule-based configuration system for 30+ products, enabling Sales and Engineering teams to generate precise quotes, reducing pricing errors by 40% and saving company revenue, all while improving and providing customer service and satisfaction.</li>
+                                        <li>Researched, informed, worked with, and/or requested requirements from Sales, Engineering, and Production teams/departments to help develop and deliver software solutions.</li>
+                                        <li>Provided training and technical support to salespeople and engineers for use of configuration systems within Microsoft Dynamics CRM.</li>
                                     </ul>
                                 </td> 
                             </tr>
@@ -112,10 +109,9 @@ export default function About()
                                     <strong>Software Development Intern</strong>
                                     <br/>      
                                     <ul>
-                                        <li>Built ASP.NET webforms application (C# for backend) for a Microsoft SQL Server database.</li>
-                                        <li>Hosted web application on Windows Server 2012 via IIS.</li>
-                                        <li>Designed barcode labels using Zebra Designer Pro software.</li>
-                                        <li>Answered help desk tickets and addressed any technical employee concerns related to software and/or hardware.</li>
+                                        <li>Built an ASP.NET webforms application, for a team of mechanical engineers, to serve as a front-end for a SQL Server database of various tools and parts pertaining to hydraulic cartridge valves.</li>
+                                        <li>Resolved internal help desk tickets related to a wide array of IT issues; which included investigating and resolving software bugs, diagnosing connection issues, investigating failing peripherals, etc.</li>
+                                        <li>Tech Stack: .NET, C#, JavaScript, HTML, CSS, SQL.</li>
                                     </ul>
                                 </td> 
                             </tr>
@@ -195,7 +191,7 @@ export default function About()
 
                                 {/* <thead> */}
                                     <tr>
-                                        <th>Tools</th>
+                                        <th>Tools (including build tools)</th>
                                     </tr>
                                 {/* </thead> */}
                                 <tr>
@@ -204,14 +200,9 @@ export default function About()
                                             <li className="floatingListItem">Visual Studio</li>
                                             <li className="floatingListItem">Visual Studio Code</li>
                                             <li className="floatingListItem">GitHub Desktop</li>
-                                            <li className="floatingListItem">Internet Information Services (IIS) Manager</li>
                                             <li className="floatingListItem">SQL Server Management Studio</li>
-                                            <li className="floatingListItem">MySQL Workbench</li>
-                                            {/* <li className="floatingListItem">MongoDB Compass</li> */}
-                                            <li className="floatingListItem">Notepad++</li>
-                                            <li className="floatingListItem">BeyondCompare</li>
-                                            <li className="floatingListItem">FileZilla</li>
-                                            <li className="floatingListItem">Event Viewer</li>
+                                            <li className="floatingListItem">Vite</li>
+                                            <li className="floatingListItem">Create React App</li>
                                         </ul>
                                     </td>
                                 </tr>
