@@ -6,10 +6,10 @@ interface IntroProps
     content: ReactNode;
 }
 
-export function Intro(props: IntroProps)
+export function Intro({ header_id, content }: IntroProps)
 {
     return (
-        <div id={props.header_id} className="intro jumbotron">{props.content}</div>
+        <div id={header_id} className="intro jumbotron">{content}</div>
     );
 }
 
@@ -21,12 +21,12 @@ interface PageTemplateProps
     main_content: ReactNode;
 }
 
-export default function PageTemplate(props: PageTemplateProps)
+export default function PageTemplate({ intro_id, intro_content, main_id, main_content }: PageTemplateProps)
 {
     return (     
         <div className="allButFooter">
-            <Intro header_id={props.intro_id} content={props.intro_content}/>
-            <main id={props.main_id} className="contents">{props.main_content}</main>
+            <Intro header_id={intro_id} content={intro_content}/>
+            <main id={main_id} className="contents">{main_content}</main>
         </div>
     );
 }
