@@ -53,10 +53,10 @@ export default class Home extends React.Component
         );
     }
 
-    openProfessionalSamples(): void
+    /* openProfessionalSamples(): void
     {
         let summary = document.getElementById("summaryProfessionalSamples") as HTMLElement;
         let details = document.getElementById("samples") as HTMLDetailsElement;
         if(!details.hasAttribute("open")) summary.click();
-    }
+    } */
 }
