@@ -1,29 +1,14 @@
-import React from 'react';
 import PageTemplate from "./pagetemplate.tsx";
-//import LinkedInPicture from "./images/LinkedInPicture1.png";
 import Resume from "./misc/SameerRizviResume.pdf";
 import { DownloadButton } from './components/buttons.tsx';
-//import { ExternalUrlArrow } from './components/icons.tsx';
-//import { HashLink } from 'react-router-hash-link';
 
-export default class About extends React.Component
+export default function About()
 {
-    render()
-    {
-        return (<PageTemplate intro_id={"about"} main_id={"aboutMain"}
+    return (
+        <PageTemplate intro_id={"about"} main_id={"aboutMain"}
         intro_content={
             <>
             <h2>About</h2>
-                {/* <>
-                    <figure>
-                        <a href="https://www.linkedin.com/in/sameer-r-bb788375/" target="_blank" rel="noreferrer"><img src={LinkedInPicture} id="profilepic" className="center" title="Sameer Rizvi" alt="Sameer Rizvi" loading="lazy"/></a>
-                        <figcaption>
-                            <HashLink smooth to="/#contact" className="textlink" title="The Contact Page">Contact Me</HashLink>
-                            <br/>
-                            <a href={"https://www.linkedin.com/in/sameer-r-bb788375/"} target={"_blank"} rel="noreferrer" title="My LinkedIn Page">LinkedIn <ExternalUrlArrow/></a>
-                        </figcaption>
-                    </figure>
-                </> */}
             </>
         }
         main_content={
@@ -83,7 +68,6 @@ export default class About extends React.Component
                                     <ul>
                                         <li>New development and maintenance of ASP.NET web applications including applications built using MVC and Webforms frameworks; languages that include C#, VB.NET, JavaScript, HTML, VBScript, and razor; and MySQL and Microsoft SQL Server databases for data storage.</li>
                                         <li>Utilized Git and Subversion for Version Control.</li>
-                                        {/* <li>Development of custom solutions related to proprietary web-based CMS called “<a href="https://www.spinutech.com/dev/cms/spinternet/" target="_blank" title="Content Management System (CMS) by Spinutech" rel="noopener noreferrer">Spinternet</a>”.</li> */}
                                         <li>Development of custom solutions related to proprietary web-based CMS called “Spinternet”.</li>
                                         <li>Coordinated with Project Managers to deliver products and solutions to clients.</li>
                                         <li>Collaborated with other developers/team members to improve efficiency and timely delivery of solutions.</li>
@@ -135,20 +119,6 @@ export default class About extends React.Component
                                     </ul>
                                 </td> 
                             </tr>
-                            {/* <tr className="aboutTableRow">
-                                <td>2014</td> 
-                                <td>
-                                    <strong>Northwestern Mutual &mdash; Milwaukee, WI</strong> 
-                                    <br/>              
-                                    <strong>I.T. Intern</strong>
-                                    <br/>      
-                                    <ul>
-                                        <li>Developed interactive reports using Cognos Report Studio and tested them for format and/or data defects.</li>
-                                        <li>Learned SQL in order to write queries via Rapid SQL and facilitated in debugging and fixing C# code that caused an application to crash.</li>
-                                        <li>Used various Microsoft Office applications to collaborate and complete tasks.</li>
-                                    </ul>
-                                </td> 
-                            </tr> */}
                         </tbody>
                         </table>
                     </details>
@@ -248,82 +218,6 @@ export default class About extends React.Component
                             </tbody>
                         </table>
                     </details>
-
-                    {/* <details id={"samples"}>
-                        <summary id={"summaryProfessionalSamples"}>Links to some of my professional work</summary>
-                            <table>                            
-                                <thead>
-                                    <tr>
-                                        <th>Xpanxion</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.xpanxion.com/about/careers" target="_blank" rel="noopener noreferrer">Careers</a> page for xpanxion.
-                                            <ul>
-                                                <li>
-                                                    Clicking on any of the "+ View details" links should bring about a modal that contains an acknowledgment form for a prospective applicant to fill out before being redirected to a page containing the application for the job associated with the specific "+ View details" link you had clicked on.
-                                                </li>
-                                                <li>
-                                                    I used jQuery extensively on this page in order to accomplish two main objectives: finding the "+ View details" links and iterating through them and for the modal. Originally, clicking on the "+ View details" links simply redirected the user to a job application but the client needed each prospective client to fill out an "acknowledgment form" before applying for their jobs. Therefore, I needed to use jQuery to select the specific link that was clicked on, save the url it was being redirected to, and then forcing a modal which I built using a jQuery plugin called "<a href="https://craftpip.github.io/jquery-confirm/" title="A jQuery plugin that provides great set of features like, Auto-close, Ajax-loading, Themes, Animations and more." target="_blank" rel="noopener noreferrer">jquery-confirm</a>" and then only redirecting the prospective applicant to the job applicant for the job they are wanting to apply for upon successful completion of the acknowledgment form.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    </td>
-                                </tr>
-                                <thead>
-                                    <tr>
-                                        <th>PDCM</th>
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td>
-                                    <ul>
-                                        <li>
-                                            An order <a href="https://www.pdcm.com/hrconnect-legal-policy/" target="_blank" rel="noopener noreferrer">form</a> that allows a user to draw their signature on an HTML canvas. Particularly useful on mobile devices.
-                                            <ul>
-                                                <li>
-                                                    Signature drawing functionality created using "<a href="https://github.com/szimek/signature_pad" title="A JavaScript library for drawing smooth signatures." target="_blank" rel="noopener noreferrer">signature_pad</a>".
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    </td>
-                                </tr>
-                                <thead>
-                                    <tr>
-                                        <th>ISSB Bank</th>
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td>
-                                    <ul>
-                                        <li>
-                                            This <a href="https://www.issbbank.com/personal/banking/account-upgrade/" target="_blank" rel="noopener noreferrer">page</a> contains a form for upgrading your existing checking account.
-                                            <ul>
-                                                <li>
-                                                    I made extensive use of JavaScript and jQuery for this form, mostly for the purposes of hiding and unhiding certain elements based on particular criteria/selections. Some examples of this are:
-                                                    <ul>
-                                                        <li>
-                                                            Displaying an iframe when an account type is selected for the "Desired New Account Type" drowpdown field. Also, there is a different document that populates the iframe based on the account type that is selected.
-                                                        </li>
-                                                        <li>
-                                                            Clicking the "Add Another Account" button unhides the "Another Account" fieldset and changes the button text to "Remove Another Account". Clicking "Remove Another Account" hides the fieldset and changes the button text back to "Add Another Account".
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>      
-                    </details> */}
                 </div>
                 <br/>
                 <div style={{textAlign: "center",}}>
@@ -333,6 +227,5 @@ export default class About extends React.Component
                 </div>                
             </>
         }
-        />);
-    }
+    />);
 }
