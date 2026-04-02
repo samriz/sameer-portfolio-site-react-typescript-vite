@@ -1,24 +1,20 @@
-import React from "react";
+import { useEffect } from "react";
 import SocialMediaBanner from "./socialmediabanner";
 
-export default class Footer extends React.Component
+export default function Footer()
 {
-    render()
-    {
-        return (
-          <footer>
+    useEffect(() => {
+        let yearElement = document.getElementById("fullyear") as HTMLSpanElement;
+        yearElement.innerHTML = new Date().getFullYear().toString();
+    }, []); //The empty array means that this effect will only run once when the component is mounted(added to DOM). Equivalent to componentDidMount() in class components.
+    
+    return (
+        <footer>
             {/* <hr/> */}
-              <div>
+            <div>
                 <SocialMediaBanner/>
                 <p>Copyright &copy; <span id="fullyear"></span> Sameer Rizvi</p>
-              </div>
-          </footer>
-        );
-    }
-
-    componentDidMount() //executed after component has been added to the DOM
-    {
-      let yearElement = document.getElementById("fullyear") as HTMLSpanElement;
-      yearElement.innerHTML = new Date().getFullYear().toString();
-    }
+            </div>
+        </footer>
+    );
 }
