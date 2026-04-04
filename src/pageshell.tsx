@@ -19,9 +19,7 @@ export default class PageShell extends React.Component<PageShellProps, IndexStat
     constructor(props)
     {
         super(props);
-
-        if(window.visualViewport) this.state = { viewportWidth: window.visualViewport.width };
-        else this.state = { viewportWidth: 0 };
+        window.visualViewport? this.state = { viewportWidth: window.visualViewport.width } : this.state = { viewportWidth: 0 };
     }
 
     render()
@@ -52,8 +50,7 @@ export default class PageShell extends React.Component<PageShellProps, IndexStat
     {
         window.addEventListener("resize", () => {
             //console.log("resizing");
-            if(window.visualViewport) this.setState({viewportWidth: window.visualViewport.width});
-            else this.setState({viewportWidth: 0});
+            window.visualViewport? this.setState({viewportWidth: window.visualViewport.width}) : this.setState({viewportWidth: 0});
         });
     }
 }
