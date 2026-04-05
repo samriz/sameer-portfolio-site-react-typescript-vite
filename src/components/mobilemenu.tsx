@@ -1,14 +1,6 @@
 import { useEffect } from "react";
 import { MobileMenuItem } from "./menuitem";
 
-const showOrHideList = () => 
-{
-    let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
-    
-    if(hamburgerList.hidden) hamburgerList.hidden = false;
-    else hamburgerList.hidden = true;
-}
-
 export default function MobileMenu()
 {
     useEffect(() => {
@@ -53,4 +45,12 @@ export default function MobileMenu()
             </div>
         </nav>
     );
+}
+
+const showOrHideList = () => 
+{
+    let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
+    
+    if(hamburgerList.hidden) hamburgerList.hidden = false;
+    else hamburgerList.hidden = true;
 }
