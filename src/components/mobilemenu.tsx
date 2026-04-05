@@ -22,7 +22,7 @@ export default function MobileMenu()
             //if the clicked element is not the hamburger button then hide the hamburger list
             if(clickedElement !== hamburgerButton) hamburgerList.hidden = true;
         });
-    }, []); //The empty array means that this effect will only run once when the component is mounted. Equivalent to componentDidMount() in class components.
+    }, []); //The empty array means that this effect will only run once when the component is mounted(added to DOM). Equivalent to componentDidMount() in class components.
 
     return (
         <nav className={"menu"}>
