@@ -1,5 +1,5 @@
 import PageTemplate from "./pagetemplate";
-import ContactForm from "./components/contactform2";
+import ContactForm from "./components/contactform";
 
 export default function Contact()
 {
