@@ -9,12 +9,12 @@ export default function About()
         <PageTemplate intro_id={"about"} main_id={"aboutMain"}
         intro_content={
             <>
-            <h2>About</h2>
+                <h2>About</h2>
             </>
         }
         main_content={
             <>
-            <p>Click each header to expand it's section:</p>
+                <p>Click each header to expand it's section:</p>
                 <div className={"leftPad"} id={"divAboutDetails"}>
                     <EducationDetails/>
                     <ProfessionalExperienceDetails/>
