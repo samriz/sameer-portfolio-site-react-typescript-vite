@@ -1,25 +1,25 @@
 import { DesktopMenuItem } from "./menuitem";
 
-export default function Menu()
+export default function Menu() 
 {
-    return (
-      <nav className="menu">
-        <div id="divMenuItems">
-          <DesktopMenuItem
-            href="/"
-            text="sameer"
-          />
-          <span style={{color: "white"}}>|</span>
-          <DesktopMenuItem
-            href="/about"
-            text="about"
-          />
-          <span style={{color: "white"}}>|</span>
-          <DesktopMenuItem
-            href="/contact"
-            text="contact"
-          />
-        </div>
-      </nav>
-    ); 
+	return (
+		<nav className="menu">
+			<div id="divMenuItems">
+				<DesktopMenuItem
+					href="/"
+					text="sameer"
+				/>
+				<span style={{ color: "white" }}>|</span>
+				<DesktopMenuItem
+					href="/about"
+					text="about"
+				/>
+				<span style={{ color: "white" }}>|</span>
+				<DesktopMenuItem
+					href="/contact"
+					text="contact"
+				/>
+			</div>
+		</nav>
+	);
 }

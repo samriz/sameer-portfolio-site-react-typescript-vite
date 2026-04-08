@@ -16,6 +16,7 @@ export default function ContactForm()
     }, []); //The empty array means that this effect will only run once when the component is mounted(added to DOM). Equivalent to componentDidMount() in class components.
 
     const formSubmit = async (e: React.FormEvent) => {
+        
         e.preventDefault();
         let contactFormSubmitBtn = document.getElementById("contactFormSubmitBtn") as HTMLButtonElement;
         contactFormSubmitBtn.disabled = true;
@@ -108,6 +109,7 @@ export default function ContactForm()
 }
 
 const isValid = (elem: string, maxLength: number): boolean => {
+    
     let validName = false;
 
     if (elem.length > 2 || elem.length < maxLength) validName = true;
@@ -116,6 +118,7 @@ const isValid = (elem: string, maxLength: number): boolean => {
 }
 
 const isValidEmail = (email: string): boolean => {
+    
     let validEmail = false;
 
     if (email.length > 0) 

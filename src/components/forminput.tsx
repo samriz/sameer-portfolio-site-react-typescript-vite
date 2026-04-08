@@ -9,8 +9,7 @@ import FormGroupItem from "./formgroupitem";
     required: boolean;
     hidden: boolean;
 } & React.InputHTMLAttributes<HTMLInputElement> & React.TextareaHTMLAttributes<HTMLTextAreaElement>; */
-type FormInputProps =
-{
+type FormInputProps = {
     type: string;
     id: string;
     name: string;

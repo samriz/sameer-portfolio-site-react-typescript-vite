@@ -27,8 +27,7 @@ export default function Home()
     );
 }
 
-const homeContent = () =>
-{
+const homeContent = () => {
     return (
         <div className={"leftPad"}>
             <p>Welcome to my official Web Portfolio.</p>

@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 
-interface FormGroupItemProps {
+interface FormGroupItemProps 
+{
     element: ReactNode;
 }
 

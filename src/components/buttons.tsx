@@ -1,6 +1,7 @@
 //import React from 'react';
 
-interface DownloadButtonProps {
+interface DownloadButtonProps 
+{
     file: any;
     buttonText: string;
     downloadedFileName: string;

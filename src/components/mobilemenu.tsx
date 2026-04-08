@@ -47,8 +47,8 @@ export default function MobileMenu()
     );
 }
 
-const showOrHideList = () => 
-{
+const showOrHideList = () => {
+    
     let hamburgerList = document.getElementById("hamburgerList") as HTMLUListElement;
     
     if(hamburgerList.hidden) hamburgerList.hidden = false;
