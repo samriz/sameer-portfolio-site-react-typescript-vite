@@ -36,6 +36,19 @@ export function ProfessionalExperienceDetails()
             <summary>Professional experience</summary>
             <table id="employmenttable" cellSpacing="5" cellPadding="5" width="90%" border={0}>
                 <tbody>
+                    <tr>
+                        <td>April 2026-Present</td>
+                        <td>
+                            <strong>Best Buy &mdash; Gurnee, IL</strong><br />
+                            <strong>Sales Advisor/Retail Shift Lead</strong>
+                            <br />
+                            <ul>
+                                <li>Drive revenue growth through consultative sales, customer engagement, and value-added service offerings.</li>
+                                <li>Manage client-facing relations, serving as a trusted advisor to translate complex technology features into clear, value-driven business solutions for diverse customers.</li>
+                                <li>Utilize consultative sales strategies and client discovery to consistently exceed individual revenue targets and maximize average order value (AOV) by identifying cross-selling opportunities and high-value solution pairings.</li>
+                            </ul>
+                        </td>
+                    </tr>
                     <tr className="aboutTableRow">
                         <td>2022-2025</td>
                         <td>
@@ -46,7 +59,6 @@ export function ProfessionalExperienceDetails()
                                 <li>Managed multiple concurrent technical investigations and requests as Level 3 Support, prioritizing issues based on disruption to company processes.</li>
                                 <li>Supported and developed new features for Sightline &ndash; Consilio's proprietary web-based eDiscovery platform &ndash; including a more practical searching mechanism, which increased Sightline-use productivity by 10%.</li>
                                 <li>Participated in the full software lifecycle including requirements analysis, solution design, development, and testing.</li>
-                                <li>Tech Stack: .NET, C#, JavaScript, NodeJS, React, HTML, CSS, SQL.</li>
                             </ul>
                         </td>
                     </tr>
@@ -60,7 +72,6 @@ export function ProfessionalExperienceDetails()
                                 <li>Worked in a fast-paced marketing setting, where tasks revolved around developing new features and improving existing ones in several clients&apos; websites including implementing new forms and modals, hiding/unhiding specific components based on a set of criteria, etc.</li>
                                 <li>Cross-collaborated with Project Managers and clients to discuss software feature updates through self-lead project update meetings.</li>
                                 <li>Oversaw the implementation and maintenance of reCAPTCHA v3 to all forms in clients&apos; websites, which averaged 3 forms per site in over 50 sites.</li>
-                                <li>Tech Stack: .NET, VB, C#, JavaScript, HTML, CSS, SQL.</li>
                             </ul>
                         </td>
                     </tr>
@@ -74,7 +85,6 @@ export function ProfessionalExperienceDetails()
                                 <li>Assisted in the development and maintenance of American Hotel Register Company&apos;s e-commerce platform and collaborated with developers to produce and maintain optimal performance.</li>
                                 <li>Researched, investigated, and resolved user issues through support requests and system troubleshooting pertaining to API connection issues.</li>
                                 <li>Assisted and taught other web developers to use Postman to help diagnose systemic issues related to API requests.</li>
-                                <li>Tech Stack: .NET, C#, JavaScript, HTML, CSS, SQL.</li>
                             </ul>
                         </td>
                     </tr>
@@ -102,7 +112,6 @@ export function ProfessionalExperienceDetails()
                             <ul>
                                 <li>Built an ASP.NET webforms application, for a team of mechanical engineers, to serve as a front-end for a SQL Server database of various tools and parts pertaining to hydraulic cartridge valves.</li>
                                 <li>Resolved internal help desk tickets related to a wide array of IT issues; which included investigating and resolving software bugs, diagnosing connection issues, investigating failing peripherals, etc.</li>
-                                <li>Tech Stack: .NET, C#, JavaScript, HTML, CSS, SQL.</li>
                             </ul>
                         </td>
                     </tr>
